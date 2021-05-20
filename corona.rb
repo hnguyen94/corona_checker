@@ -8,11 +8,11 @@ wait = Selenium::WebDriver::Wait.new(timeout: 6)
 
 # Setup
 root_url = "https://vac.no-q.info/impfstation-wandsbek/checkins#/3/2021-05-"
-dates = [23, 24] # May
+dates = [23, 24, 26] # May
 matching_text = "An diesem Tag gibt es leider keine verfügbaren Plätze mehr."
 
 def sleep_with_random() 
-  random_number = rand(1..4)
+  random_number = rand(1..3)
   sleep(random_number)
 end
 
